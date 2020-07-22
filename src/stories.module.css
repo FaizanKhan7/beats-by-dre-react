@@ -1,0 +1,45 @@
+.headerStyles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.headerStyles i {
+    font-size: 20px;
+}
+
+.headerStyles img {
+    width: 25px;
+    height: 25px;
+}
+
+.headerStylesTab img {
+    width: 35px;
+    height: 35px;
+}
+
+.headerStylesTab i {
+    font-size: 1.5rem;
+}
+
+.headerStylesTab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 30px 40px;
+}
+
+@media (min-width: 768px) {
+    .headerStyles {
+        display: none;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .headerStylesTab {
+        display: none;
+    }
+}
