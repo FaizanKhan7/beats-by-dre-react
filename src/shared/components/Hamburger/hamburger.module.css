@@ -1,0 +1,90 @@
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+}
+
+.hamburger:focus {
+    border: 5px solid lightgray;
+    padding: 3px 10px 3px 3px;
+}
+
+.hamburgerBox {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburgerInner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburgerInner,
+.hamburgerInner::before,
+.hamburgerInner::after {
+    width: 28px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+.hamburgerInner::before,
+.hamburgerInner::after {
+    content: "";
+    display: block;
+}
+
+.hamburgerInner::before {
+    top: -10px;
+}
+
+.hamburgerInner::after {
+    bottom: -10px;
+}
+
+.hamburgerSqueeze .hamburgerInner {
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburgerSqueeze .hamburgerInner::before {
+    transition: top 0.1s 0.14s ease, opacity 0.1s ease;
+}
+
+.hamburgerSqueeze .hamburgerInner::after {
+    transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburgerSqueeze:hover .hamburgerInner {
+    transform: rotate(45deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburgerSqueeze:hover .hamburgerInner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease, opacity 0.1s 0.14s ease;
+}
+
+.hamburgerSqueeze:hover .hamburgerInner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+}

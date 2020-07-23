@@ -6,6 +6,7 @@ import ProductRoutes from "./product/ProductRoutes/Product";
 import SupportRoutes from "./support/SupportRoutes/Support";
 import SearchRoutes from "./search/SearchRoutes/Search";
 import MenuBarRoutes from "./menubar/MenuBarRoutes/MenuBar";
+import Hamburger from "./shared/components/Hamburger/Hamburger";
 
 function Stories() {
   return (
@@ -21,7 +22,7 @@ function Stories() {
           />
         </Link>
         <Link to="menuBar">
-          <i className={"fas fa-bars"}></i>
+          <Hamburger />
         </Link>
       </header>
       <header className={styles.headerStylesTab}>
