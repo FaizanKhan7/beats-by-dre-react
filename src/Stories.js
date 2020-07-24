@@ -7,10 +7,12 @@ import SupportRoutes from "./support/SupportRoutes/Support";
 import SearchRoutes from "./search/SearchRoutes/Search";
 import MenuBarRoutes from "./menubar/MenuBarRoutes/MenuBar";
 import Hamburger from "./shared/components/Hamburger/Hamburger";
+import Form from "./shared/components/Form/Form";
 
 function Stories() {
   return (
     <div className={styles.storiesHome}>
+      <Form />
       <header className={styles.headerStyles}>
         <Link to="/search">
           <i className={"fas fa-search"}></i>

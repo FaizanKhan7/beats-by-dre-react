@@ -1,0 +1,25 @@
+.form {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.news {
+    text-transform: uppercase;
+}
+
+.statement {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #6c6c6c;
+}
+
+.email {
+    height: 47px;
+    width: 460px;
+    border-radius: 41px;
+}
