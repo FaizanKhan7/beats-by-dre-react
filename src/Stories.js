@@ -45,7 +45,7 @@ function Stories() {
           <i className={"fas fa-search"}></i>
         </Link>
       </header>
-      <p>This is stories page(default/home - page)</p>
+      <p>This is stories page</p>
     </div>
   );
 }
