@@ -1,5 +1,12 @@
+.formbg {
+    background-color: #e0ddda;
+    width: 100%;
+}
+
 .form {
     text-align: center;
+    background-color: #ffffff;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -10,16 +17,56 @@
 
 .news {
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .statement {
     text-transform: uppercase;
     font-size: 16px;
-    color: #6c6c6c;
+    color: #8c8c8c;
 }
 
 .email {
     height: 47px;
-    width: 460px;
     border-radius: 41px;
+    border: 2px solid #8c8c8c;
+    padding: 0px 25px 0px 25px;
+}
+
+.terms {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.check {
+    height: 24px;
+    width: 24px;
+}
+
+span {
+    color: #E01E3C;
+    padding-left: 5px;
+}
+
+/* .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+
+@media screen and (min-width: 320px) {
+    .email {
+        width: 290px;
+    }
+
+    .statement {
+        padding: 40px 15px 25px 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .email {
+        width: 460px;
+    }
 }
