@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./form.module.css";
+import MoreButton from "./../Button/MoreButton";
 
 function Form() {
   return (
@@ -16,15 +17,18 @@ function Form() {
           placeholder="Enter Your Email"
           className={styles.email}
         />
-        <p className={styles.terms}>
+        <div className={styles.terms}>
           <input type="checkbox" className={styles.check} />
-          <span>*</span> I Am 16 Years Of Age Or Older And Agree With The Terms
-          & Conditions And Privacy Policy
-        </p>
+          <p>
+            <span>*</span> I Am 16 Years Of Age Or Older And Agree With The
+            Terms & Conditions And Privacy Policy
+          </p>
+        </div>
         <p className={styles.terms}>
           <input type="checkbox" className={styles.check} />
           <span>*</span> I Would Like To Receive Marketing Emails From Beats
         </p>
+        <MoreButton btnName="sign up" />
       </div>
     </div>
   );
