@@ -35,7 +35,7 @@
 .hamburgerInner,
 .hamburgerInner::before,
 .hamburgerInner::after {
-    width: 28px;
+    width: 25px;
     height: 3px;
     background-color: #000;
     position: absolute;
@@ -51,11 +51,11 @@
 }
 
 .hamburgerInner::before {
-    top: -10px;
+    top: -8px;
 }
 
 .hamburgerInner::after {
-    bottom: -10px;
+    bottom: -8px;
 }
 
 .hamburgerSqueeze .hamburgerInner {

@@ -43,3 +43,9 @@
         display: none;
     }
 }
+
+@media (min-width: 768px) {
+    .floatStories {
+        display: flex;
+    }
+}
