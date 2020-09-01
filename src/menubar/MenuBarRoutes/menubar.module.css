@@ -39,7 +39,7 @@
     padding: 20px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .menuContent {
         display: none;
     }

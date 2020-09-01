@@ -1,0 +1,34 @@
+.cards {
+    cursor: pointer;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.headline {
+    position: relative;
+    bottom: 65px;
+    left: 0;
+    color: #161616;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.65rem;
+    padding: 5px 5px 5px 0;
+    line-height: 1.6;
+    display: inline;
+    margin: 0 5px 0 0;
+}
+
+.readMore {
+    cursor: pointer;
+    color: #949494;
+    padding-left: 10px;
+}
+
+.readMore:hover {
+    color: #e31837;
+}
