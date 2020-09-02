@@ -1,0 +1,126 @@
+.footerMobIcons {
+    color: #a7a6a6;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    border-top: 1px solid #a7a6a6;
+    border-bottom: 1px solid #a7a6a6;
+}
+
+.footerMobIcons i {
+    cursor: pointer;
+}
+
+.footerMobIcons i:hover {
+    color: #8f8c8c;
+}
+
+.locationNewsletterMob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #a7a6a6;
+}
+
+.locationNewsletterMob p {
+    cursor: pointer;
+    letter-spacing: -0.8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #a7a6a6
+}
+
+.locationNewsletterMob p:hover {
+    color: #8f8c8c;
+}
+
+.beatsCopyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.beatsCopyright p {
+    color: #8f8c8c;
+    font-size: 11px;
+    margin-left: 8px;
+}
+
+.logobottom {
+    width: 20px;
+    height: 20px;
+}
+
+.listLength {
+    width: 90%;
+}
+
+.footerTab {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.IconsTab {
+    font-size: 1.4rem;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footerHeading {
+    font-size: 1.2rem;
+    margin: 30px auto 20px;
+}
+
+.footerContent ul li {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.1rem;
+    color: #a7a6a6;
+}
+
+.footerContent ul li:hover {
+    color: #8f8c8c;
+}
+
+.beatsCopyright2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.beatsCopyright2 p {
+    color: #8f8c8c;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+@media (min-width:0px) and (max-width:767px) {
+    .footerMob {
+        display: block;
+    }
+    .footerTab {
+        display: none;
+    }
+    .beatsCopyright2 {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    .footerMob {
+        display: none;
+    }
+}

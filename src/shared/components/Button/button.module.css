@@ -45,3 +45,10 @@
     background-position: 0 100%;
     color: #fff;
 }
+
+.backToTop {
+    border: 1px solid #a7a6a6;
+    padding: 12px 15px;
+    border-radius: 50%;
+    color: #a7a6a6;
+}
