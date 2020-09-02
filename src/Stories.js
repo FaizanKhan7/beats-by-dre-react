@@ -10,6 +10,7 @@ import MenuBarRoutes from "./menubar/MenuBarRoutes/MenuBar";
 import Hamburger from "./shared/components/Hamburger/Hamburger";
 import StoriesCard from "./shared/components/StoriesCard/StoriesCard";
 import readStoriesRoutes from "./readStories/readStoriesRoutes/readStories";
+import Footer from "./shared/components/Footer/Footer";
 class Stories extends React.Component {
   state = {
     visible: false,
@@ -128,6 +129,9 @@ class Stories extends React.Component {
             />
           </Link>
         </section>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }
